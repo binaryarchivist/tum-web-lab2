@@ -243,3 +243,25 @@ section {
     border-radius: 8px;
     background-color: #fff;
 }
+
+.review-textarea,
+.review-input {
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    margin-bottom: 20px;
+    padding: 10px;
+    font-size: 1rem;
+    color: #333;
+}
+
+.review-submit {
+    border: none;
+    border-radius: 5px;
+    color: white;
+    padding: 10px 20px;
+    cursor: pointer;
+}
+
+.w-100 {
+    width: 100%;
+}

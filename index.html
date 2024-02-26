@@ -37,7 +37,7 @@
       <img src="assets/cover.png" alt="Cover Image" class="absolute position-cover"/>
     </div>
   </section>
-  <section class="flex flex-col justify-center items-center gap-3 bg-lavender p-3">
+  <section class="flex flex-col justify-center items-center gap-3 bg-lavender p-3" id="#features">
     <div class="mb-1">
       <h1 class="bold text-48">What do we do?</h1>
     </div>
@@ -71,7 +71,7 @@
       </div>
     </div>
   </section>
-  <section class="flex flex-col justify-center items-center gap-3 p-3">
+  <section class="flex flex-col justify-center items-center gap-3 p-3" id="services">
     <div class="flex flex-col gap-2 items-center justify-center">
       <h2 class="bold text-48">Our Services</h2>
       <div class="flex flex-wrap gap-2 justify-center">
@@ -80,35 +80,41 @@
             <img src="assets/user.svg" alt="Scan the landscape" class="w-12 h-12">
           </div>
           <h3 class="text-24 bolder">Service One</h3>
-          <p class="text-16 text-comet">Description of the first service offered, explaining its benefits and features.</p>
+          <p class="text-16 text-comet">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Egestas purus viverra accumsan in nisl.</p>
         </div>
         <div class="service-item">
           <div class="service-icon">
             <img src="assets/exchange.svg" alt="Scan the landscape" class="w-12 h-12">
           </div>
           <h3 class="text-24 bolder">Service Two</h3>
-          <p class="text-16 text-comet">Description of the second service, with details about what it entails and how it can help the user.</p>
+          <p class="text-16 text-comet">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Egestas purus viverra accumsan in nisl.</p>
         </div>
         <div class="service-item">
           <div class="service-icon">
             <img src="assets/chat.svg" alt="Scan the landscape" class="w-12 h-12">
           </div>
           <h3 class="text-24 bolder">Service Three</h3>
-          <p class="text-16 text-comet">A brief overview of the third service, outlining its main points and advantages.</p>
+          <p class="text-16 text-comet">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Egestas purus viverra accumsan in nisl.</p>
         </div>
         <div class="service-item">
           <div class="service-icon">
             <img src="assets/gear.svg" alt="Scan the landscape" class="w-12 h-12">
           </div>
-          <h3 class="text-24 bolder">Service Three</h3>
-          <p class="text-16 text-comet">A brief overview of the third service, outlining its main points and advantages.</p>
+          <h3 class="text-24 bolder">Service Four</h3>
+          <p class="text-16 text-comet">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Egestas purus viverra accumsan in nisl.</p>
         </div>
       </div>
     </div>
   </section>
-  <section class="flex flex-col justify-center items-center gap-3 p-3 bg-lavender">
+  <section class="flex flex-col justify-center items-center gap-2 p-3 bg-lavender" id="review">
     <div class="flex flex-col gap-2 items-center justify-center">
       <h2 class="bold text-48">Leave a Review !</h2>
+      <form class="flex flex-col w-100" action="#" method="post">
+        <textarea class="review-textarea text-16 text-comet" name="review" rows="5" placeholder="Write your review here..." required></textarea>
+        <input class="review-input text-16 text-comet" name="name" type="text" placeholder="Enter your name" required>
+        <input class="review-input text-16 text-comet" name="email" type="email" placeholder="Enter your email" required>
+        <button class="review-submit bg-primary text-white text-16 bold" type="submit">Submit</button>
+      </form>
     </div>
   </section>
 </main>
