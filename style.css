@@ -525,3 +525,17 @@ section {
         opacity: 1;
     }
 }
+
+footer {
+    @media (max-width: 769px) {
+        display: inline-block;
+        width: 100%;
+        text-align: center;
+        padding: 1rem;
+    }
+    display: none;
+    > a {
+        color: #007bff;
+        text-decoration: none;
+    }
+}
