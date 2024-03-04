@@ -486,7 +486,7 @@ section {
 
 #dronie {
     transition: transform 0.3s ease;
-    animation: tilt 3s ease-in-out infinite;
+    animation: tilt 3s ease-in-out infinite, dronie-appear 3s ease-in forwards;
 }
 
 
@@ -520,6 +520,10 @@ section {
 
 
 @keyframes dronie-appear {
+    from {
+        visibility: hidden;
+        opacity: 0;
+    }
     to {
         visibility: visible;
         opacity: 1;
