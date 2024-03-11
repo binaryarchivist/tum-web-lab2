@@ -6,39 +6,47 @@
   <title>CropScout</title>
   <link rel="stylesheet" href="reset.css" />
   <link rel="stylesheet" href="style.css" />
+  <script src="https://cdn.tailwindcss.com"></script>
   <link rel="icon" type="image/x-icon" href="/assets/favicon.png">
+  <style type="text/tailwindcss">
+    @layer utilities {
+      .content-auto {
+        content-visibility: auto;
+      }
+    }
+  </style>
 </head>
 <body>
 <main class="main-container">
-  <section class="header-section">
-    <header class="main-header">
-      <div class="header-links">
-        <div class="header-icon">
+  <section class="grid grid-cols-12">
+    <header class="col-span-12 flex flex-col justify-center gap-4 p-4 xl:col-span-6 xl:gap-12 xl:p-8">
+      <div class="flex justify-between items-center gap-3 lg:gap-12">
+        <div class="flex items-center gap-1 ">
           <img src="assets/icon.svg" alt="Drone"/>
-          <span class="bold">CropScout</span>
+          <span class="font-bold hidden lg:inline-block">CropScout</span>
         </div>
-        <div class="nav-links">
-          <a href="#features">Features</a>
-          <a href="#services">Service</a>
-          <a href="#review">Review</a>
-          <a href="#location">Location</a>
+        <div class="flex justify-center items-center gap-1 flex-wrap lg:gap-3">
+          <a class="no-underline text-[#007bff] py-px px-1 lg:py-1 lg:px-2.5 hover:underline" href="#features">Features</a>
+          <a class="no-underline text-[#007bff] py-px px-1 lg:py-1 lg:px-2.5 hover:underline" href="#services">Service</a>
+          <a class="no-underline text-[#007bff] py-px px-1 lg:py-1 lg:px-2.5 hover:underline" href="#review">Review</a>
+          <a class="no-underline text-[#007bff] py-px px-1 lg:py-1 lg:px-2.5 hover:underline" href="#location">Location</a>
         </div>
       </div>
-      <div class="app-desc">
-        <h1>
-          Scout and analyse <span id="crops">crops</span> your effortlessly
+      <div class="flex flex-col gap-4 lg:gap-8">
+        <h1 class="text-[38px]/[46px]	text-[#181E4B] lg:text-[76px]/[92px]">
+          Scout and analyse <span class="text-[#4475F2] underline underline-offset-[20%]" id="crops">crops</span> your effortlessly
         </h1>
-        <p>
+        <p class="text-[#5E6282] text-[14px]/[26px] lg:text-[16px][32px]">
           Designed to give farmers, agronomists, and agricultural professionals an unparalleled view of their fields, enabling precise monitoring and management of crops at any scale. Our state-of-the-art drones are equipped with high-resolution cameras and sensors that capture detailed images and data across vast agricultural landscapes.
         </p>
-        <a href="#" class="cta-button p-1 text-white bg-primary bold">Start now →</a>
+        <a href="#" class="no-underline rounded-md w-fit p-2 bg-[#4475F2] hover:bg-[#0056b3] text-white font-bold lg:p-4 lg:self-auto">Start now →</a>
       </div>
     </header>
-    <div class="header-cover">
+    <div class="col-span-6 relative hidden xl:inline-block">
       <img src="assets/cover.png" alt="Cover Image" class="position-cover"/>
     </div>
   </section>
-  <section class="features-section" id="#features">
+  <section class="flex flex-col justify-center items-center gap-4 p-4 lg:p-12 lg:gap-12 bg-[#E3E2D6]" id="#features">
     <div class="mb-1">
       <h1 class="features-header">What do we do?</h1>
     </div>
